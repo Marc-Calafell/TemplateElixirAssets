@@ -8,6 +8,7 @@
     "laravel-elixir-webpack-official": "^1.0.6"
   },
   "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
     "laravel-elixir-vue-2": "^0.2.0"
   },
   "scripts": {
