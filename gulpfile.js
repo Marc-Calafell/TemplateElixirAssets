@@ -14,14 +14,9 @@ require('laravel-elixir-vue-2');
  */
 
 elixir(mix => {
-    mix.sass('sass/app.scss')
-       .webpack('js/app.js');
+    mix.sass('app.scss')
+       .webpack('app.js')
+       .browserSync({
+        proxy: 'http://localhost:3000/TemplateElixirAssets/public'
+     });
 });
-
-elixir(function(mix) {
-    mix.browserSync({
-        .webpack
-        proxy: 'http://localhost:63342/TemplateElixirAssets/public/index.html'
-    });
-});
-
